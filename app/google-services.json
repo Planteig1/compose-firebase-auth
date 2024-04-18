@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "72218981137",
+    "project_id": "fir-authtest-kotlin",
+    "storage_bucket": "fir-authtest-kotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72218981137:android:d7fb028812ca81bc66d2b0",
+        "android_client_info": {
+          "package_name": "com.example.auth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAip3GWsVZtUaFkd7vOh4KwMM_y4TUAmeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

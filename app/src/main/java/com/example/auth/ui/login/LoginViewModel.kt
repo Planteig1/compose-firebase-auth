@@ -5,6 +5,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import com.example.auth.services.AccountService
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuth
+
 
 class LoginViewModel : ViewModel() {
     private val accountService: AccountService = AccountService();
@@ -23,7 +26,12 @@ class LoginViewModel : ViewModel() {
         this.password = password;
     }
 
-    fun registerNewUser(navigateOnSuccess: () -> Unit) {
-        accountService.authenticate(username, password, navigateOnSuccess)
+    fun registerNewUser(navigateOnSuccess: () -> Unit, navigateOnFail: () -> Unit) {
+        accountService.authenticate(username, password, navigateOnSuccess, navigateOnFail)
     }
+
+    fun loginUser(navigateOnSuccess: () -> Unit) {
+        accountService.login(username,password, navigateOnSuccess)
+    }
+
 }
